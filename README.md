@@ -5,5 +5,5 @@
     CuentaCorriente
     CajaDeAhorro
 
-<pre> ```bash npm install 
-prompt-sync node index.js ``` </pre>#
+<pre> ```bash npm install prompt-sync 
+node index.js ``` </pre>#
