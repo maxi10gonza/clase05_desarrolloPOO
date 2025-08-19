@@ -39,13 +39,13 @@ export class Cuenta {
 }
 
 export class CuentaCorriente extends Cuenta {
-  constructor(numero, titular, saldoInicial, descubierto) {
+  constructor(numero, titular, saldoInicial, sobregiro) {
     super(numero, titular, saldoInicial);
-    this.descubierto = descubierto;
+    this.sobregiro = sobregiro;
   }
 
   extraer(monto) {
-    if (this.getSaldo() - monto >= -this.descubierto) {
+    if (this.getSaldo() - monto >= -this.sobregiro) {
       this.modificarSaldo(-monto);
       console.log(`Se extrajo $${monto} de la cuenta corriente.`);
     } else {
