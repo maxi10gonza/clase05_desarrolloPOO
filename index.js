@@ -45,7 +45,7 @@ class BancoCLI {
   // Mostrar menú principal
   mostrarMenu() {
     console.log("\n" + "=".repeat(50));
-    console.log(`         ${this.banco.nombre} - Sistema CLI`);
+    console.log(`         ${this.banco.nombre} `);
     console.log("=".repeat(50));
     console.log("1. Crear cuenta corriente");
     console.log("2. Crear caja de ahorro");
